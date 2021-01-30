@@ -4,7 +4,7 @@
 
 ## First chapter
 
-Just a small introduction into ** _setting up environment, GitBash, setting up starter app, how to join community of people following RallyCoding courses etc._ ** on different operating systems.
+Just a small introduction into **_setting up environment, GitBash, setting up starter app, how to join community of people following RallyCoding courses etc._** on different operating systems.
 
 ## Second chapter
 
