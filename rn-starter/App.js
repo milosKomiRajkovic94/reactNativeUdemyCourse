@@ -19,7 +19,7 @@ const navigator = createStackNavigator(
     Chapter3ExerciseComponent: Chapter3ExerciseComponent
   },
   {
-    initialRouteName: 'Chapter3ExerciseComponent',
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
       title: 'App',
     },

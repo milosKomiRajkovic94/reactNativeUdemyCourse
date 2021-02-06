@@ -43,3 +43,18 @@ Primary elements have built in props like styles etc.
 **_horizontal_** - render items horizontally.
 
 **_showHorizontalScrollIndicator_** - hides horizontal scroll.
+
+## Fourth chapter
+
+**_Button_** - Very simple component for showing button and detecting a press event.
+
+It is a self closing element.
+title: text of the button;
+onPress: onClick event of the web;
+
+**_TouchableOpacity_** - Highly customizable component that can detect a press on just about any kind of element.
+
+Not self-closing element.
+onPress: onClick event of the web;
+
+-Every component in the first block of createStackNavigatior function has props.navigation.navigate("nameOfTheComponent") which helps us to navigate to the certain component.
