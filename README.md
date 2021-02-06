@@ -58,3 +58,13 @@ Not self-closing element.
 onPress: onClick event of the web;
 
 -Every component in the first block of createStackNavigatior function has props.navigation.navigate("nameOfTheComponent") which helps us to navigate to the certain component.
+
+## Fifth chapter
+
+**_Building Reusable Components_**
+
+-Same group of elements, repeated three times.
+
+-We could repeat the same JSX three times or we could create a seperate component.
+
+-Image can be shown in Image element from a prop source.
