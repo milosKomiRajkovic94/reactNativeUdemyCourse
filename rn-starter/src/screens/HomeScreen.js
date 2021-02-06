@@ -7,11 +7,11 @@ const HomeScreen = ({ navigation }) => {
     <View>
       <Text style={styles.text}>Hi there!</Text>
       <Button 
-        title="Go to components demo" 
+        title="Go to Components Demo" 
         onPress={() => navigation.navigate("ComponentScreen")}
       />
       <Button 
-        title="Go to list demo" 
+        title="Go to List Demo" 
         onPress={() => navigation.navigate("List")}
       />
       <TouchableOpacity onPress={() => navigation.navigate("ComponentScreen")}>
@@ -19,6 +19,14 @@ const HomeScreen = ({ navigation }) => {
           Go to list demo
         </Text>
       </TouchableOpacity>
+      <Button 
+        title="Go to Image Demo" 
+        onPress={() => navigation.navigate("ImageScreen")}
+      />
+      <Button 
+        title="Go to Image Exercise Demo" 
+        onPress={() => navigation.navigate("ImageExerciseScreen")}
+      />
     </View>
   )
 };

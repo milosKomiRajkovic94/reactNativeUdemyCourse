@@ -10,13 +10,19 @@ import Chapter2ExerciseComponent from './src/exercises/Chapter2ExerciseComponent
 import ListScreen from './src/screens/ListScreen';
 import Chapter3ExerciseComponent from './src/exercises/Chapter3ExerciseComponent';
 
+/* Fourth chapter */
+import ImageScreen from './src/screens/ImageScreen';
+import ImageExerciseScreen from './src/exercises/Chapter3ExerciseComponents/ImageExerciseScreen';
+
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     ComponentScreen: ComponentScreen,
     Chapter2ExerciseComponent: Chapter2ExerciseComponent,
     List: ListScreen,
-    Chapter3ExerciseComponent: Chapter3ExerciseComponent
+    Chapter3ExerciseComponent: Chapter3ExerciseComponent,
+    ImageScreen: ImageScreen,
+    ImageExerciseScreen: ImageExerciseScreen
   },
   {
     initialRouteName: 'Home',
