@@ -14,6 +14,13 @@ import Chapter3ExerciseComponent from './src/exercises/Chapter3ExerciseComponent
 import ImageScreen from './src/screens/ImageScreen';
 import ImageExerciseScreen from './src/exercises/Chapter3ExerciseComponents/ImageExerciseScreen';
 
+/* Fifth chapter */
+import CounterScreen from './src/screens/CounterScreen';
+import ColorScreen from './src/screens/ColorScreen';
+import SquareScreen from './src/screens/SquareScreen';
+import TextScreen from './src/screens/TextScreen';
+import Chapter6ExerciseComponents from './src/exercises/Chapter6ExerciseComponents';
+
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
@@ -22,7 +29,12 @@ const navigator = createStackNavigator(
     List: ListScreen,
     Chapter3ExerciseComponent: Chapter3ExerciseComponent,
     ImageScreen: ImageScreen,
-    ImageExerciseScreen: ImageExerciseScreen
+    ImageExerciseScreen: ImageExerciseScreen,
+    CounterScreen: CounterScreen,
+    ColorScreen: ColorScreen,
+    SquareScreen: SquareScreen,
+    TextScreen: TextScreen,
+    Chapter6ExerciseComponents: Chapter6ExerciseComponents
   },
   {
     initialRouteName: 'Home',

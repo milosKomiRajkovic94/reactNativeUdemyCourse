@@ -68,3 +68,69 @@ onPress: onClick event of the web;
 -We could repeat the same JSX three times or we could create a seperate component.
 
 -Image can be shown in Image element from a prop source.
+
+## Sixth chapter
+
+**_State Management in React_**
+
+**_Props_**: System to pass data from parent to child
+
+**_State_**: System to track a piece of data that will change over time. If that data changes our app will 'rerender'.
+
+We should always ask ourselves three questions:
+
+1. What piece of data is changing in our app?
+
+2. What type of data is it?
+
+3. What is the data's starting (default) value?
+
+Array decostructing with react hook _useState_:
+
+> const [counter, setCounter] = useState(0);
+
+Every component has it's own piece of state.
+
+To push into array do for example:
+
+> setColors([...colors, randomRgb()])
+
+If we are using string injectulation we need to use curly braces (e.g {`Increase ${color}`})
+
+Generally, we create state variables in the most parent component that needs to read or change a state value.
+
+**_Reducers_**
+
+Function that gets called with two objects.
+
+Arguemnt #1 - object that has _all of our state in it_.
+
+Argument #2 - object that describes the update we want to make.
+
+We look at Argument #2 and use it to decide how to change Argument #1.
+
+Two technicalities:
+
+**_(1) We never change Argument #1 directly. _**
+
+**_(2) We must always return a value to be used as Argument #1. _**
+
+> const [state, dispatch] = useReducer(reducer, {red: 0, green: 0, blue: 0})
+
+Community convention is:
+
+> {type: 'change_red', payload: 15}
+
+**_type_** -> string that describe the exact change operation we want to make;
+
+**_payload_** -> some data that is critical to the change operation;
+
+_CounterScreen.js component_ was changed as one of the practice for this chapter. Instead of using useState we used useReducer;
+
+**_TextInput_** - Element for inserting of text.
+
+AutoCorrect is automatic for iOS and for Android it's not.
+
+_autoCapitalize_ prop - "characters", "none", "sentences", "words";
+
+_autoCorrect_ prop - default is true;
