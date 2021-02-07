@@ -111,9 +111,9 @@ We look at Argument #2 and use it to decide how to change Argument #1.
 
 Two technicalities:
 
-**_(1) We never change Argument #1 directly. _**
+**_(1) We never change Argument #1 directly._**
 
-**_(2) We must always return a value to be used as Argument #1. _**
+**_(2) We must always return a value to be used as Argument #1._**
 
 > const [state, dispatch] = useReducer(reducer, {red: 0, green: 0, blue: 0})
 
