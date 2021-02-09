@@ -134,3 +134,111 @@ AutoCorrect is automatic for iOS and for Android it's not.
 _autoCapitalize_ prop - "characters", "none", "sentences", "words";
 
 _autoCorrect_ prop - default is true;
+
+## Seventh chapter
+
+**_Layout Systems_**
+
+**_Box Object Model_**:
+
+The height / width of an element + the space around it
+|
+|
+|
+V
+Use this to affect the positioning of a single element
+
+**_Flex Box_**:
+
+How some number of sibling elements get laid out inside a parent
+|
+|
+|
+V
+Use this to position multiple elements with a common parent
+
+**_Position_**:
+
+How a single element gets laid out inside of a parent
+|
+|
+|
+V
+Use this to override Box Object Model + Flex Box
+
+**_margin_**: Set the margin on all sides;
+
+**_marginVertical_**: Set the margin on top and bottom;
+
+**_marginHorizontal_**: Set the margin on left and right;
+
+**_padding_**: Set the padding on all sides;
+
+**_paddingVertical_**: Set the padding on top and bottom;
+
+**_paddingHorizontal_**: Set the padding on left and right;
+
+**_borderWidth_**: Set border width on all sides;
+
+**_alignItems_**: 'flex-start': align items as much as they can on left side / on top (depending on horizontal / vertical aligment);
+'center': align items on the center;
+'flex-end': align items as much as they can on right side / on bottom (depending on horizontal / vertical aligment);
+
+**_flexDirection_**: controls whether the items are aligned on the columns or the row;
+
+**_flex_**: number on the certain child determines how much space it is going to have. The greater the number the longer is space;
+
+**_Parent_**: alignItems;
+justifyContent;
+flexDirection;
+
+**_Child_**: flex;
+alignSelf;
+
+**_position_**: 'relative': default initial position;
+'absolute': ignored by siblings, still obeys some flex box rules set by parents;
+
+**_-Absolute fill objects_**:
+position: 'absolute',
+bottom: 0,
+top: 0,
+left: 0,
+right: 0,
+
+Apply box object model rules
+|
+|
+V
+Is position 'absolute'
+|
+|
+V
+
+---
+
+No  
+ |  
+ |  
+ V  
+Apply all flex box rules, considering siblings  
+ |  
+ |  
+ V  
+Place element inside parent  
+ |
+|
+V
+Apply top, left, right, bottom
+
+---
+
+             Yes
+               |
+               |
+               V
+
+Apply some flex box rules, ignore all siblings
+|
+|
+V
+Apply top, left, right, bottom
