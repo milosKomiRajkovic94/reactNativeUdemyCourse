@@ -242,3 +242,36 @@ Apply some flex box rules, ignore all siblings
 |
 V
 Apply top, left, right, bottom
+
+
+## Eight chapter
+
+**_The way to start project_**
+
+Either by using:
+
+**_expo-cli_**: adds in a tone of default config to use features common in apps, like icons, video, better camera use, etc.
+
+**_react-native-cli_**: default CLI to generate a project. Requires a lot of extra work to add in common features.
+
+The way we can use navigator object is like:
+1. StackNavigator (icon for returning back or link to the next page)
+2. BottomTabNavigator (footer menu)
+3. DrawerNavigator (Sidebar)
+
+Either use npm or yarn you can't use them both or interchangably. 
+
+Navigator object is created by createStackNavigator function from "react-navigation-stack" library and additional options, in form of separate object which can be added are following for example:
+
+`
+const navigator = createStackNavigator({
+  Search: SearchScreen //NameOfThePage: ComponentOfThePage
+}, {
+  initialRouteName: 'Search', //What should be default page
+  defaultNavigationOptions: {
+    title: 'BusinessSearch' //Default header navigation title
+  }
+});
+`
+
+Icons similar to simple-line-icons but compatible with react-native can be found on the following link: https://github.com/expo/vector-icons and https://icons.expo.fyi/ .
