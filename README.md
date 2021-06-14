@@ -331,3 +331,19 @@ export default () => {
     return [searchApi, results, errorMessage];
 }; 
 ```
+
+## Eleventh chapter
+
+-Image will not be seen unless width and height are added.
+
+-showsHorizontallScrollerIndicator = {false} - ako ne želimo da prikažemo scroller;
+
+-TouchableOpacity - gives an effect to the user that he selected something;
+
+-navigation.navigate("nameOfTheScreen") - to navigate on the certain page;
+
+-withNavigation from "react-navigation" is a wrapper component which wraps the component and let it receives the prop navigation. 
+
+-Second {} in navigate function are passed params like id. e.g. navigation.navigate("nameOfThePage", {id: });
+
+-navigation.getParam("nameOfParam") is the way we are passing param to the child component once inside a child component.
