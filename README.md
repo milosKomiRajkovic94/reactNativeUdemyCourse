@@ -300,7 +300,8 @@ Two most popular libraries for API calls are:
 
 We can create customm hooks and return in [] what we need back, perfect example is useResults.js:
 
-`import { useEffect, useState } from 'react';
+```
+import { useEffect, useState } from 'react';
 
 import yelp from '../api/yelp';
 
@@ -328,4 +329,5 @@ export default () => {
     }, []);
 
     return [searchApi, results, errorMessage];
-}; `
+}; 
+```
