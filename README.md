@@ -347,3 +347,32 @@ export default () => {
 -Second {} in navigate function are passed params like id. e.g. navigation.navigate("nameOfThePage", {id: });
 
 -navigation.getParam("nameOfParam") is the way we are passing param to the child component once inside a child component.
+
+## Twelfth  chapter
+
+*__props__*:
+
+Communicates information from a parent directly down to a child.
+
+Easy to setup.
+
+To communicate data down multiple layers, we have to write a lot of code.
+
+*__context__*:
+
+Moves information from a parent to some nested child.
+
+Complicated to setup, lots of special terms.
+
+Easy to communicate data from a parent to a super child.
+
+
+-Context should be created inside a folder src/context
+
+-value: information we want to share.
+
+-Object can't be rendered correctly.
+
+-Context usual structure, e.g:
+
+{data: blogPosts, addBlogPost: () => {}}
