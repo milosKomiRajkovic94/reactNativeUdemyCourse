@@ -376,3 +376,20 @@ Easy to communicate data from a parent to a super child.
 -Context usual structure, e.g:
 
 {data: blogPosts, addBlogPost: () => {}}
+
+
+*__Navigation options of a certain screen can be changed as follows, e.g:__* 
+
+```
+IndexScreen.navigationOptions = ({ navigation }) => {
+  return {
+    headerRight: () => (
+      <TouchableOpacity onPress={() => navigation.navigate('Create')}>
+        <Feather name="plus" size={30} />
+      </TouchableOpacity>
+    ),
+  };
+};
+```
+*__defaultProps__* : should be used if some screen isn't reaciving anything to the child component
+and  it is a built-in function of React so you don't need to install prop-types for that.
