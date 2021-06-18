@@ -393,3 +393,8 @@ IndexScreen.navigationOptions = ({ navigation }) => {
 ```
 *__defaultProps__* : should be used if some screen isn't reaciving anything to the child component
 and  it is a built-in function of React so you don't need to install prop-types for that.
+
+
+## Thirteenth chapter
+
+In this chapter we are using json-server and ngrok to demonstrate HTTP requests and usage of it in react native app. Nothing speacial is mentioned here regarding only react native that we didn't knew already. 
