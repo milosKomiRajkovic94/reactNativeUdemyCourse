@@ -398,3 +398,7 @@ and  it is a built-in function of React so you don't need to install prop-types 
 ## Thirteenth chapter
 
 In this chapter we are using json-server and ngrok to demonstrate HTTP requests and usage of it in react native app. Nothing speacial is mentioned here regarding only react native that we didn't knew already. 
+
+## Fourteenth chapter
+
+In this chapter we created our own Express API server in communication with mongoose and so MongoDB as well. We generated our own jwt and did comparisson of hashed passwords. Basically, all of the back end operations required for sign up and sign in operations. 
